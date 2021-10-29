@@ -1,0 +1,478 @@
+{
+  "paragraphs": [
+    {
+      "text": "%jdbc(saveAs\u003dou)\nSELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE DISPLAY_NAME like \u002708%\u0027;",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-29 14:21:02.090",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9.0,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "ORGANIZATIONAL_UNIT_ID0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "PARENT_ORGANIZATION_UNIT_ID1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "NAME2",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ORG_TYPE_CODE_CNCPT_ID3",
+                        "visible": true,
+                        "width": 296.0,
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "STATUS4",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "DISPLAY_NAME5",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ORGANIZATION_IDENTIFIER6",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ORGANIZATION_IDENTIFIER_EXTENS7",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "CREATED_ON8",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "CREATED_BY9",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "MODIFIED_ON10",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "MODIFIED_BY11",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "LOCK_SEQ_NUM12",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "IS_DELETED_INDICATOR13",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "ORG_UNIT_TYPE_CODE_CNCPT_ID14",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "EFFECTIVE_FROM15",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "EFFECTIVE_TO16",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "NAME_NORMALIZED17",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "DISPLAY_NAME_NORMALIZED18",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "LAB_REPORT_ROUTING_DEST_IND19",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1.0,
+                      "paginationPageSize": 250.0
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ID": "string",
+                      "NAME": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "ID\tNAME\n11034\t08 ALLO MAMAN (AMOS)\n12907\t08 ANISHNABE LONG TERM CARE CENTER\n11061\t08 AU BON CHEZ SOI\n12908\t08 AU COEUR DU RAYON DE SOLEIL\n12909\t08 BASTIDE DES AÎNÉS (LA)\n12910\t08 BORÉAL (LE)\n14608\t08 CENTRE D\u0027AMITIE AUTOCHTONE DE VAL-D\u0027OR\n12911\t08 CENTRE DE READAPTATION LA MAISON (SIÈGE SOCIAL)\n126\t08 CENTRE DE SANTE LAC SIMON\n36\t08 CENTRE DE SANTE PIKOGAN\n125\t08 CENTRE DE SANTE TIMISKAMING (NDN)\n124\t08 CENTRE DE SANTE WINNEWAY\n12912\t08 CENTRE DE SANTÉ KITCISAKIK\n11036\t08 CENTRE JEUNESSE L\u0027ABITIBI-TEMISCAMINGUE (CENTRE ADMIN)\n11037\t08 CENTRE NORMAND (SIÈGE SOCIAL)\n12913\t08 CHEZ-SOI ADAPTÉ (UN)\n11038\t08 CLINIQUE CENTRE-VILLE\n16092\t08 CLINIQUE HUMANESSENCE\n16116\t08 CLINIQUE INFIRMIERE NORD-OUEST\n11039\t08 CLINIQUE PIKATEMPS\n11040\t08 CRDI DE L\u0027ABITIBI-TÉMISCAMINGUE CLAIR FOYER (CENTRE ADMIN)\n34\t08 CSSS DE LA VALLEE-DE-L\u0027OR\n35\t08 CSSS DE ROUYN-NORANDA\n37\t08 CSSS DES AURORES-BOREALES\n38\t08 CSSS DU TEMISCAMINGUE\n39\t08 CSSS LES ESKERS DE L\u0027ABITIBI\n12915\t08 DOMAINE DE L\u0027HIRONDELLE\n12914\t08 DOMAINE DES PIONNIERS VALLÉE-DE-L\u0027OR (LE)\n12916\t08 DOMICILE ADORÉ (2009) ENR.\n33\t08 DSP ABITIBI-TEMISCAMINGUE\n12917\t08 EAGLE VILLAGE FIRST NATION HEALTH CENTER\n11041\t08 GMF AURORES BOREALES\n11042\t08 GMF LES ESKERS D\u0027AMOS (CLINIQUE MEDICALE SOLEIL ENR.)\n11043\t08 GMF ROUYN-NORANDA (CLINIQUE MÉDICALE ACCÈS-SANTÉ)\n14666\t08 GMF VALLÉE-DE-L\u0027OR\n11044\t08 GMF VALLÉE-DE-L\u0027OR (CLINIQUE FAMILIALE DES PINS)\n12919\t08 HÉBERGEMENT LA MAISONNÉE\n11045\t08 JARDINS DU PATRIMOINE AMOS (LES)\n12921\t08 JARDINS DU PATRIMOINE LA SARRE (LES)\n12922\t08 JARDINS DU PATRIMOINE ROUYN-NORANDA (LES)\n12923\t08 JARDINS DU PATRIMOINE VAL-D\u0027OR (LES)\n12925\t08 MAISON DE JEREMIE (LA)\n12924\t08 MAISON DES AINÉ(ES) (LA)\n11046\t08 MAISON DU SOLEIL (SYLVIE PAQUETTE) (LA)\n11047\t08 PAVILLON AMOS INC.\n11048\t08 PAVILLON D\u0027HÉBERGEMENT DE BARRAUTE INC.\n12927\t08 PAVILLON DE L\u0027OASIS\n12926\t08 PAVILLON DES SOURCES\n11049\t08 PAVILLON HARRICANA\n12928\t08 PAVILLON L\u0027OASIS DU REPOS VAL-D\u0027OR\n12929\t08 PHARM ACCÈS-PHARMA (WALMART) ERIC DUBE ET DOMINIQUE FISET, PHARMNS\n12930\t08 PHARM ACCÈS-PHARMA (WALMART) SÉGUIN ET GAGNON\n11050\t08 PHARM BRUNET CLINIQUE VIENS, AHERN, BLANCHETTE ET LAMARE\n12931\t08 PHARM BRUNET SYLVIE LAROUCHE, FRANCE GAGNÉ, CLAUDIA DENIS\n11051\t08 PHARM BRUNET VIENS, AHERN, BLANCHETTE ET LAMARE, PHARMNS\n12932\t08 PHARM FAMILIPRIX ÉMILIE MIKOLAJCZAJAK (AVENUE PRINCIPALE)\n12936\t08 PHARM JEAN COUTU JEAN-FRANÇOIS RONDEAU (LA SARRE)\n12933\t08 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (1741, 3E AVENUE)\n12934\t08 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (823, 3E AVENUE)\n12935\t08 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (MALARTIC)\n11052\t08 PHARM JEAN-COUTU ALEXANDR ROY, PHARMN\n12937\t08 PHARM JEAN-COUTU MARIE-JOSÉE GIRARD ET JEAN-PHILIPPE TANGUAY, PHARMNS\n16093\t08 PHARM MARIE-CLAUDE LÉVESQUE-AFFILIÉE À BRUNET\n12938\t08 PHARM PROXIM ALINE VIENS ET NATHALIE ADAM, PHARM.\n12939\t08 PHARM PROXIM CLOUTIER, VEILLETTE-BOUCHER\n12940\t08 PHARM PROXIM DUVAL, DENONCOURT ET ROY (BOULEVARD DES PINS)\n12941\t08 PHARM PROXIM MARC LEFEBVRE ET CATHY PIGEON PHARM.\n12942\t08 PHARM PROXIM SEBASTIEN COTE ET JACINTHE GOULET PHARM (RUE PRINCIPALE)\n11053\t08 PHARM PROXIM TREPANIER LALIBERTE ET ASSOCIES\n12943\t08 PHARM ROY, M.A. ET SYLVESTRE, R. PHARMNS\n12944\t08 PHARM UNIPRIX JULY-ANN LEHOUILLER, ISABELLE LAROUCHE, JOHANNE GINGRAS INC.\n11054\t08 PHARM UNIPRIX RAJOTTE ET RIVEST INC\n12945\t08 PHARM UNIPRIX SYLVIE BOUGIE (TÉMISCAMING)\n12946\t08 PHARM UNIPRIX SYLVIE BOUGIE (VILLE-MARIE)\n12947\t08 PHARM UNIPRIX SYLVIE PREVOST\n11055\t08 PHARM UNIPRIX VÉRONIQUE BARRETTE ET JULIE BERGERON PHARM.\n12948\t08 PLACE DES ARGOUSIERS\n12951\t08 RESIDENCE BEL-HUMEUR\n12961\t08 RESIDENCE LUCIEN-GAUDET (OSBL)\n12963\t08 RESIDENCE MARGUERITE D\u0027YOUVILLE\n12949\t08 RÉSIDENCE  ANDRÉA INC.\n12950\t08 RÉSIDENCE AU COEUR D\u0027OR\n12952\t08 RÉSIDENCE CHEZ-NOUS\n12953\t08 RÉSIDENCE DAME MARIE\n12954\t08 RÉSIDENCE DESJARDINS\n12955\t08 RÉSIDENCE DORÉ\n12956\t08 RÉSIDENCE FAMILIALE ALLARD\n12957\t08 RÉSIDENCE FAMILIALE M. GRENIER INC. (LA)\n12958\t08 RÉSIDENCE FAMILLE BOYER\n11056\t08 RÉSIDENCE FRANCINE LEGAULT\n12959\t08 RÉSIDENCE FRIGON GINETTE ET GIRARD MICHEL\n11057\t08 RÉSIDENCE LA CATHÉDRALE\n12960\t08 RÉSIDENCE LE FILON DORT\n12962\t08 RÉSIDENCE MARC CHAMPAGNE\n11058\t08 RÉSIDENCE OU IL FAIT BON VIVRE\n11059\t08 RÉSIDENCE ROYALE (LA)\n12964\t08 RÉSIDENCE SIGMA\n12965\t08 RÉSIDENCE ST-PIERRE\n12966\t08 RÉSIDENCE SUZANNE CHAMPAGNE\n11060\t08 RÉSIDENCE SYLRICK (LA)\n11035\t08 SANTÉ V.I.P.\n12967\t08 VILLA DES LILAS\n12918\t08 ÉDIFICE LE BEL ÂGE\n12920\t08 ÎLOT D\u0027OR INC.\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1635517253677_342313810",
+      "id": "paragraph_1635450780753_2127718401",
+      "dateCreated": "2021-10-29 14:20:53.677",
+      "dateStarted": "2021-10-29 14:21:02.104",
+      "dateFinished": "2021-10-29 14:21:04.889",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%pyspark\nfrom pyspark.sql import DataFrame\nimport pandas\n\norgs \u003d DataFrame(z.get(\u0027ou\u0027), sqlContext)\nous \u003d z.getAsDataFrame(\u0027ou\u0027)\n#z.show(orgs)\nprint(type(orgs))\nprint(type(ous))\nous_dict \u003d ous.to_dict()\n#print(str(ous_dict))\nfor col, values in ous.to_dict().items():\n    print(str(col))\n    print(str(values))\n#print(str(orgs.count()))\n\n\n#print(\"id: {0}\".format(data.id))",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-29 14:21:06.697",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "ID": "string",
+                      "NAME": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cclass \u0027pyspark.sql.dataframe.DataFrame\u0027\u003e\n\u003cclass \u0027pandas.core.frame.DataFrame\u0027\u003e\nID\n{0: 11034, 1: 12907, 2: 11061, 3: 12908, 4: 12909, 5: 12910, 6: 14608, 7: 12911, 8: 126, 9: 36, 10: 125, 11: 124, 12: 12912, 13: 11036, 14: 11037, 15: 12913, 16: 11038, 17: 16092, 18: 16116, 19: 11039, 20: 11040, 21: 34, 22: 35, 23: 37, 24: 38, 25: 39, 26: 12915, 27: 12914, 28: 12916, 29: 33, 30: 12917, 31: 11041, 32: 11042, 33: 11043, 34: 14666, 35: 11044, 36: 12919, 37: 11045, 38: 12921, 39: 12922, 40: 12923, 41: 12925, 42: 12924, 43: 11046, 44: 11047, 45: 11048, 46: 12927, 47: 12926, 48: 11049, 49: 12928, 50: 12929, 51: 12930, 52: 11050, 53: 12931, 54: 11051, 55: 12932, 56: 12936, 57: 12933, 58: 12934, 59: 12935, 60: 11052, 61: 12937, 62: 16093, 63: 12938, 64: 12939, 65: 12940, 66: 12941, 67: 12942, 68: 11053, 69: 12943, 70: 12944, 71: 11054, 72: 12945, 73: 12946, 74: 12947, 75: 11055, 76: 12948, 77: 12951, 78: 12961, 79: 12963, 80: 12949, 81: 12950, 82: 12952, 83: 12953, 84: 12954, 85: 12955, 86: 12956, 87: 12957, 88: 12958, 89: 11056, 90: 12959, 91: 11057, 92: 12960, 93: 12962, 94: 11058, 95: 11059, 96: 12964, 97: 12965, 98: 12966, 99: 11060, 100: 11035, 101: 12967, 102: 12918, 103: 12920}\nNAME\n{0: \u002708 ALLO MAMAN (AMOS)\u0027, 1: \u002708 ANISHNABE LONG TERM CARE CENTER\u0027, 2: \u002708 AU BON CHEZ SOI\u0027, 3: \u002708 AU COEUR DU RAYON DE SOLEIL\u0027, 4: \u002708 BASTIDE DES AÎNÉS (LA)\u0027, 5: \u002708 BORÉAL (LE)\u0027, 6: \"08 CENTRE D\u0027AMITIE AUTOCHTONE DE VAL-D\u0027OR\", 7: \u002708 CENTRE DE READAPTATION LA MAISON (SIÈGE SOCIAL)\u0027, 8: \u002708 CENTRE DE SANTE LAC SIMON\u0027, 9: \u002708 CENTRE DE SANTE PIKOGAN\u0027, 10: \u002708 CENTRE DE SANTE TIMISKAMING (NDN)\u0027, 11: \u002708 CENTRE DE SANTE WINNEWAY\u0027, 12: \u002708 CENTRE DE SANTÉ KITCISAKIK\u0027, 13: \"08 CENTRE JEUNESSE L\u0027ABITIBI-TEMISCAMINGUE (CENTRE ADMIN)\", 14: \u002708 CENTRE NORMAND (SIÈGE SOCIAL)\u0027, 15: \u002708 CHEZ-SOI ADAPTÉ (UN)\u0027, 16: \u002708 CLINIQUE CENTRE-VILLE\u0027, 17: \u002708 CLINIQUE HUMANESSENCE\u0027, 18: \u002708 CLINIQUE INFIRMIERE NORD-OUEST\u0027, 19: \u002708 CLINIQUE PIKATEMPS\u0027, 20: \"08 CRDI DE L\u0027ABITIBI-TÉMISCAMINGUE CLAIR FOYER (CENTRE ADMIN)\", 21: \"08 CSSS DE LA VALLEE-DE-L\u0027OR\", 22: \u002708 CSSS DE ROUYN-NORANDA\u0027, 23: \u002708 CSSS DES AURORES-BOREALES\u0027, 24: \u002708 CSSS DU TEMISCAMINGUE\u0027, 25: \"08 CSSS LES ESKERS DE L\u0027ABITIBI\", 26: \"08 DOMAINE DE L\u0027HIRONDELLE\", 27: \"08 DOMAINE DES PIONNIERS VALLÉE-DE-L\u0027OR (LE)\", 28: \u002708 DOMICILE ADORÉ (2009) ENR.\u0027, 29: \u002708 DSP ABITIBI-TEMISCAMINGUE\u0027, 30: \u002708 EAGLE VILLAGE FIRST NATION HEALTH CENTER\u0027, 31: \u002708 GMF AURORES BOREALES\u0027, 32: \"08 GMF LES ESKERS D\u0027AMOS (CLINIQUE MEDICALE SOLEIL ENR.)\", 33: \u002708 GMF ROUYN-NORANDA (CLINIQUE MÉDICALE ACCÈS-SANTÉ)\u0027, 34: \"08 GMF VALLÉE-DE-L\u0027OR\", 35: \"08 GMF VALLÉE-DE-L\u0027OR (CLINIQUE FAMILIALE DES PINS)\", 36: \u002708 HÉBERGEMENT LA MAISONNÉE\u0027, 37: \u002708 JARDINS DU PATRIMOINE AMOS (LES)\u0027, 38: \u002708 JARDINS DU PATRIMOINE LA SARRE (LES)\u0027, 39: \u002708 JARDINS DU PATRIMOINE ROUYN-NORANDA (LES)\u0027, 40: \"08 JARDINS DU PATRIMOINE VAL-D\u0027OR (LES)\", 41: \u002708 MAISON DE JEREMIE (LA)\u0027, 42: \u002708 MAISON DES AINÉ(ES) (LA)\u0027, 43: \u002708 MAISON DU SOLEIL (SYLVIE PAQUETTE) (LA)\u0027, 44: \u002708 PAVILLON AMOS INC.\u0027, 45: \"08 PAVILLON D\u0027HÉBERGEMENT DE BARRAUTE INC.\", 46: \"08 PAVILLON DE L\u0027OASIS\", 47: \u002708 PAVILLON DES SOURCES\u0027, 48: \u002708 PAVILLON HARRICANA\u0027, 49: \"08 PAVILLON L\u0027OASIS DU REPOS VAL-D\u0027OR\", 50: \u002708 PHARM ACCÈS-PHARMA (WALMART) ERIC DUBE ET DOMINIQUE FISET, PHARMNS\u0027, 51: \u002708 PHARM ACCÈS-PHARMA (WALMART) SÉGUIN ET GAGNON\u0027, 52: \u002708 PHARM BRUNET CLINIQUE VIENS, AHERN, BLANCHETTE ET LAMARE\u0027, 53: \u002708 PHARM BRUNET SYLVIE LAROUCHE, FRANCE GAGNÉ, CLAUDIA DENIS\u0027, 54: \u002708 PHARM BRUNET VIENS, AHERN, BLANCHETTE ET LAMARE, PHARMNS\u0027, 55: \u002708 PHARM FAMILIPRIX ÉMILIE MIKOLAJCZAJAK (AVENUE PRINCIPALE)\u0027, 56: \u002708 PHARM JEAN COUTU JEAN-FRANÇOIS RONDEAU (LA SARRE)\u0027, 57: \u002708 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (1741, 3E AVENUE)\u0027, 58: \u002708 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (823, 3E AVENUE)\u0027, 59: \u002708 PHARM JEAN-COUTU ALEXANDR ROY ET RAYMOND MATTE INC (MALARTIC)\u0027, 60: \u002708 PHARM JEAN-COUTU ALEXANDR ROY, PHARMN\u0027, 61: \u002708 PHARM JEAN-COUTU MARIE-JOSÉE GIRARD ET JEAN-PHILIPPE TANGUAY, PHARMNS\u0027, 62: \u002708 PHARM MARIE-CLAUDE LÉVESQUE-AFFILIÉE À BRUNET\u0027, 63: \u002708 PHARM PROXIM ALINE VIENS ET NATHALIE ADAM, PHARM.\u0027, 64: \u002708 PHARM PROXIM CLOUTIER, VEILLETTE-BOUCHER\u0027, 65: \u002708 PHARM PROXIM DUVAL, DENONCOURT ET ROY (BOULEVARD DES PINS)\u0027, 66: \u002708 PHARM PROXIM MARC LEFEBVRE ET CATHY PIGEON PHARM.\u0027, 67: \u002708 PHARM PROXIM SEBASTIEN COTE ET JACINTHE GOULET PHARM (RUE PRINCIPALE)\u0027, 68: \u002708 PHARM PROXIM TREPANIER LALIBERTE ET ASSOCIES\u0027, 69: \u002708 PHARM ROY, M.A. ET SYLVESTRE, R. PHARMNS\u0027, 70: \u002708 PHARM UNIPRIX JULY-ANN LEHOUILLER, ISABELLE LAROUCHE, JOHANNE GINGRAS INC.\u0027, 71: \u002708 PHARM UNIPRIX RAJOTTE ET RIVEST INC\u0027, 72: \u002708 PHARM UNIPRIX SYLVIE BOUGIE (TÉMISCAMING)\u0027, 73: \u002708 PHARM UNIPRIX SYLVIE BOUGIE (VILLE-MARIE)\u0027, 74: \u002708 PHARM UNIPRIX SYLVIE PREVOST\u0027, 75: \u002708 PHARM UNIPRIX VÉRONIQUE BARRETTE ET JULIE BERGERON PHARM.\u0027, 76: \u002708 PLACE DES ARGOUSIERS\u0027, 77: \u002708 RESIDENCE BEL-HUMEUR\u0027, 78: \u002708 RESIDENCE LUCIEN-GAUDET (OSBL)\u0027, 79: \"08 RESIDENCE MARGUERITE D\u0027YOUVILLE\", 80: \u002708 RÉSIDENCE  ANDRÉA INC.\u0027, 81: \"08 RÉSIDENCE AU COEUR D\u0027OR\", 82: \u002708 RÉSIDENCE CHEZ-NOUS\u0027, 83: \u002708 RÉSIDENCE DAME MARIE\u0027, 84: \u002708 RÉSIDENCE DESJARDINS\u0027, 85: \u002708 RÉSIDENCE DORÉ\u0027, 86: \u002708 RÉSIDENCE FAMILIALE ALLARD\u0027, 87: \u002708 RÉSIDENCE FAMILIALE M. GRENIER INC. (LA)\u0027, 88: \u002708 RÉSIDENCE FAMILLE BOYER\u0027, 89: \u002708 RÉSIDENCE FRANCINE LEGAULT\u0027, 90: \u002708 RÉSIDENCE FRIGON GINETTE ET GIRARD MICHEL\u0027, 91: \u002708 RÉSIDENCE LA CATHÉDRALE\u0027, 92: \u002708 RÉSIDENCE LE FILON DORT\u0027, 93: \u002708 RÉSIDENCE MARC CHAMPAGNE\u0027, 94: \u002708 RÉSIDENCE OU IL FAIT BON VIVRE\u0027, 95: \u002708 RÉSIDENCE ROYALE (LA)\u0027, 96: \u002708 RÉSIDENCE SIGMA\u0027, 97: \u002708 RÉSIDENCE ST-PIERRE\u0027, 98: \u002708 RÉSIDENCE SUZANNE CHAMPAGNE\u0027, 99: \u002708 RÉSIDENCE SYLRICK (LA)\u0027, 100: \u002708 SANTÉ V.I.P.\u0027, 101: \u002708 VILLA DES LILAS\u0027, 102: \u002708 ÉDIFICE LE BEL ÂGE\u0027, 103: \"08 ÎLOT D\u0027OR INC.\"}\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1635517253678_2047982858",
+      "id": "paragraph_1635507418966_1345554383",
+      "dateCreated": "2021-10-29 14:20:53.678",
+      "dateStarted": "2021-10-29 14:21:06.714",
+      "dateFinished": "2021-10-29 14:21:21.245",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%python\n\nimport os\nimport cx_Oracle\nimport json\n\noracle_user \u003d os.environ[\u0027DB_USER\u0027]\noracle_host \u003d os.environ[\u0027DB_HOST\u0027]\noracle_password \u003d os.environ[\u0027DB_PASSWORD\u0027]\noracle_port \u003d os.environ[\u0027DB_PORT\u0027]\noracle_service_name \u003d os.environ[\u0027DB_NAME\u0027]\norg_type_id \u003d \u00271019533\u0027\nconnection \u003d cx_Oracle.connect(oracle_user, oracle_password, \"{0}:{1}/{2}\".format(oracle_host, oracle_port, oracle_service_name))\n\ncursor \u003d connection.cursor()\ncursor.execute(\"SELECT ORGANIZATIONAL_UNIT_ID, NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT WHERE ORG_TYPE_CODE_CNCPT_ID \u003d \u0027{0}\u0027\".format(org_type_id))\n\norgs \u003d []\nfor org_unit_id, name in cursor:\n    org \u003d {}\n    org[\u0027id\u0027] \u003d org_unit_id\n    org[\u0027name\u0027] \u003d name\n    orgs.append(org)\n    #print(\"{0}: {1}\".format(org_unit_id,name))\ncursor.close()\n#for org in orgs:\n#    print(\"{0}: {1}\".format(org[\u0027id\u0027], org[\u0027name\u0027]))\nz.put(\u0027pano_orgs\u0027, orgs)\nz.show(\u0027pano_orgs\u0027)",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-29 14:20:53.678",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "pano_orgs\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1635517253678_1028317557",
+      "id": "paragraph_1635450800249_1193386312",
+      "dateCreated": "2021-10-29 14:20:53.678",
+      "status": "READY"
+    },
+    {
+      "text": "%r.ir\n\nz.show(pano_orgs)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-29 14:20:53.678",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "r",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/r",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Error in is.data.frame(data): object \u0027pano_orgs\u0027 not found\nTraceback:\n\n1. z.show(pano_orgs)\n2. is.data.frame(data)   # at line 120-133 of file \u003ctext\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1635517253678_584019989",
+      "id": "paragraph_1635451644383_47611411",
+      "dateCreated": "2021-10-29 14:20:53.678",
+      "status": "READY"
+    },
+    {
+      "text": "%r\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-29 14:20:53.678",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "r",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "editorMode": "ace/mode/r",
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1635517253678_516015151",
+      "id": "paragraph_1635454233392_194721080",
+      "dateCreated": "2021-10-29 14:20:53.678",
+      "status": "READY"
+    }
+  ],
+  "name": "test",
+  "id": "2GJAY8XQA",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
