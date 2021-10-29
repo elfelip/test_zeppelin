@@ -3,7 +3,7 @@
     {
       "text": "%jdbc(saveAs\u003dou)\nSELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002707%\u0027 OR NAME like \u002708%\u0027;",
       "user": "anonymous",
-      "dateUpdated": "2021-10-29 15:36:34.703",
+      "dateUpdated": "2021-10-29 15:42:28.068",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -281,14 +281,14 @@
       "jobName": "paragraph_1635517253677_342313810",
       "id": "paragraph_1635450780753_2127718401",
       "dateCreated": "2021-10-29 14:20:53.677",
-      "dateStarted": "2021-10-29 15:36:34.709",
-      "dateFinished": "2021-10-29 15:36:37.571",
+      "dateStarted": "2021-10-29 15:42:28.138",
+      "dateFinished": "2021-10-29 15:42:31.232",
       "status": "FINISHED"
     },
     {
       "text": "%jdbc(saveAs\u003dotherou)\n\nSELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002708%\u0027 OR NAME like \u002709%\u0027;",
       "user": "anonymous",
-      "dateUpdated": "2021-10-29 15:36:40.412",
+      "dateUpdated": "2021-10-29 15:42:33.098",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -351,8 +351,8 @@
       "jobName": "paragraph_1635519026859_371168718",
       "id": "paragraph_1635519026859_371168718",
       "dateCreated": "2021-10-29 14:50:26.859",
-      "dateStarted": "2021-10-29 15:36:40.422",
-      "dateFinished": "2021-10-29 15:36:40.467",
+      "dateStarted": "2021-10-29 15:42:33.108",
+      "dateFinished": "2021-10-29 15:42:33.151",
       "status": "FINISHED"
     },
     {
@@ -428,7 +428,7 @@
     {
       "text": "%spark.r\n\nou \u003c- z.getAsDataFrame(\u0027ou\u0027)\notherou \u003c- z.getAsDataFrame(\u0027otherou\u0027)\n\nnrow(ou)\nnrow(otherou)\n#ou$NAME\n#otherou$NAME\n\n#ou$NAME\ncommon \u003c- intersect(ou$NAME, otherou$NAME)\ncommon\n\nleftdiff \u003c- setdiff(otherou$NAME, ou$NAME)\nleftdiff\n\nrightdiff \u003c- setdiff(ou$NAME, otherou$NAME)\nrightdiff\n#ou[common]\n",
       "user": "anonymous",
-      "dateUpdated": "2021-10-29 15:36:50.360",
+      "dateUpdated": "2021-10-29 15:42:38.944",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -462,8 +462,8 @@
       "jobName": "paragraph_1635519189990_240369358",
       "id": "paragraph_1635519189990_240369358",
       "dateCreated": "2021-10-29 14:53:09.990",
-      "dateStarted": "2021-10-29 15:36:50.369",
-      "dateFinished": "2021-10-29 15:36:50.515",
+      "dateStarted": "2021-10-29 15:42:38.955",
+      "dateFinished": "2021-10-29 15:42:55.621",
       "status": "FINISHED"
     },
     {
