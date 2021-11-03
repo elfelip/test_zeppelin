@@ -46,7 +46,7 @@
     {
       "text": "%jdbc(saveAs\u003dou)\nSELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002707 CSSS%\u0027 OR NAME like \u002708 CSSS%\u0027;",
       "user": "anonymous",
-      "dateUpdated": "2021-11-01 19:05:13.227",
+      "dateUpdated": "2021-11-03 22:16:11.261",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -304,7 +304,7 @@
           }
         },
         "enabled": true,
-        "tableHide": false,
+        "tableHide": true,
         "editorHide": true
       },
       "settings": {
@@ -333,7 +333,7 @@
     {
       "text": "%jdbc(saveAs\u003dotherou)\n\nSELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002708 CSSS%\u0027 OR NAME like \u002709 CSSS%\u0027;",
       "user": "anonymous",
-      "dateUpdated": "2021-11-01 19:05:05.312",
+      "dateUpdated": "2021-11-03 22:16:18.815",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -377,7 +377,7 @@
         },
         "enabled": true,
         "tableHide": false,
-        "editorHide": true
+        "editorHide": false
       },
       "settings": {
         "params": {},
@@ -398,14 +398,14 @@
       "jobName": "paragraph_1635519026859_371168718",
       "id": "paragraph_1635519026859_371168718",
       "dateCreated": "2021-10-29 14:50:26.859",
-      "dateStarted": "2021-10-29 19:23:24.095",
-      "dateFinished": "2021-10-29 19:23:24.166",
+      "dateStarted": "2021-11-03 22:16:18.872",
+      "dateFinished": "2021-11-03 22:16:21.669",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\nimport pandas\n\nous \u003d z.getAsDataFrame(\u0027ou\u0027)\nother_ous \u003d z.getAsDataFrame(\u0027otherou\u0027)\n\nous_dict \u003d ous.to_dict()\nfor col, values in ous.to_dict().items():\n    print(str(col))\n    print(str(values))\n",
       "user": "anonymous",
-      "dateUpdated": "2021-11-01 19:30:18.385",
+      "dateUpdated": "2021-11-03 22:24:37.428",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -455,104 +455,29 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mEmptyDataError\u001b[0m                            Traceback (most recent call last)\n\u001b[0;32m/tmp/ipykernel_283/579086277.py\u001b[0m in \u001b[0;36m\u003cmodule\u003e\u001b[0;34m\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mpandas\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----\u003e 3\u001b[0;31m \u001b[0mous\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mz\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetAsDataFrame\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\u0027ou\u0027\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      4\u001b[0m \u001b[0mother_ous\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mz\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mgetAsDataFrame\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\u0027otherou\u0027\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/tmp/ipykernel_283/3534818399.py\u001b[0m in \u001b[0;36mgetAsDataFrame\u001b[0;34m(self, key)\u001b[0m\n\u001b[1;32m     65\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mImportError\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     66\u001b[0m             \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"fail to call getAsDataFrame as pandas is not installed\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---\u003e 67\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mpd\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mread_csv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mStringIO\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0msep\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0;34m\"\\t\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     68\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     69\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mremove\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mkey\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/util/_decorators.py\u001b[0m in \u001b[0;36mwrapper\u001b[0;34m(*args, **kwargs)\u001b[0m\n\u001b[1;32m    309\u001b[0m                     \u001b[0mstacklevel\u001b[0m\u001b[0;34m\u003d\u001b[0m\u001b[0mstacklevel\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    310\u001b[0m                 )\n\u001b[0;32m--\u003e 311\u001b[0;31m             \u001b[0;32mreturn\u001b[0m \u001b[0mfunc\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    312\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    313\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0mwrapper\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/io/parsers/readers.py\u001b[0m in \u001b[0;36mread_csv\u001b[0;34m(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)\u001b[0m\n\u001b[1;32m    584\u001b[0m     \u001b[0mkwds\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mupdate\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkwds_defaults\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    585\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--\u003e 586\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0m_read\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfilepath_or_buffer\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    587\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    588\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/io/parsers/readers.py\u001b[0m in \u001b[0;36m_read\u001b[0;34m(filepath_or_buffer, kwds)\u001b[0m\n\u001b[1;32m    480\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    481\u001b[0m     \u001b[0;31m# Create the parser.\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--\u003e 482\u001b[0;31m     \u001b[0mparser\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mTextFileReader\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfilepath_or_buffer\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    483\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    484\u001b[0m     \u001b[0;32mif\u001b[0m \u001b[0mchunksize\u001b[0m \u001b[0;32mor\u001b[0m \u001b[0miterator\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/io/parsers/readers.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, f, engine, **kwds)\u001b[0m\n\u001b[1;32m    809\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"has_index_names\"\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mkwds\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"has_index_names\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    810\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--\u003e 811\u001b[0;31m         \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_engine\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_make_engine\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mengine\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    812\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    813\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mclose\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/io/parsers/readers.py\u001b[0m in \u001b[0;36m_make_engine\u001b[0;34m(self, engine)\u001b[0m\n\u001b[1;32m   1038\u001b[0m             )\n\u001b[1;32m   1039\u001b[0m         \u001b[0;31m# error: Too many arguments for \"ParserBase\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-\u003e 1040\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mmapping\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mengine\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mf\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;34m)\u001b[0m  \u001b[0;31m# type: ignore[call-arg]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1041\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1042\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0m_failover_to_python\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py\u001b[0m in \u001b[0;36m__init__\u001b[0;34m(self, src, **kwds)\u001b[0m\n\u001b[1;32m     67\u001b[0m         \u001b[0mkwds\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"dtype\"\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mensure_dtype_objs\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mkwds\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mget\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"dtype\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     68\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---\u003e 69\u001b[0;31m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_reader\u001b[0m \u001b[0;34m\u003d\u001b[0m \u001b[0mparsers\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mTextReader\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhandles\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhandle\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0mkwds\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     70\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     71\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mhandles\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mclose\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\n\u001b[0;32m/opt/conda/envs/python_3_with_R/lib/python3.7/site-packages/pandas/_libs/parsers.pyx\u001b[0m in \u001b[0;36mpandas._libs.parsers.TextReader.__cinit__\u001b[0;34m()\u001b[0m\n\n\u001b[0;31mEmptyDataError\u001b[0m: No columns to parse from file"
+          }
+        ]
+      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1635517253678_2047982858",
       "id": "paragraph_1635507418966_1345554383",
       "dateCreated": "2021-10-29 14:20:53.678",
-      "dateStarted": "2021-10-29 14:52:43.796",
-      "dateFinished": "2021-10-29 14:52:44.020",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%spark.r\n\n",
-      "user": "anonymous",
-      "dateUpdated": "2021-11-03 21:30:30.096",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "r",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/r",
-        "fontSize": 9.0,
-        "results": {},
-        "enabled": true
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "SUCCESS",
-        "msg": [
-          {
-            "type": "HTML",
-            "data": "\n\u003cpre\u003e\u003ccode\u003eError in install.packages(\"RJDBC\", repos \u003d \"https://cran.r-project.org\"): unable to install packages\n\u003c/code\u003e\u003c/pre\u003e\n\n\n\n"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1635971023050_1735295218",
-      "id": "paragraph_1635971023050_1735295218",
-      "dateCreated": "2021-11-03 20:23:43.050",
-      "dateStarted": "2021-11-03 20:26:06.490",
-      "dateFinished": "2021-11-03 20:26:06.619",
-      "status": "FINISHED"
-    },
-    {
-      "text": "%spark.r\n\nou \u003c- z.getAsDataFrame(\u0027ou\u0027)\notherou \u003c- z.getAsDataFrame(\u0027otherou\u0027)\n\ntest \u003c- z.get(\u0027ou\u0027)\ntest\n\nnrow(ou)\nnrow(otherou)\nou\notherou\n\n#ou$NAME\ncommon \u003c- intersect(ou, otherou)\nou[common,]\n\nleftdiff \u003c- setdiff(otherou$NAME, ou$NAME)\nleftdiff\n\nrightdiff \u003c- setdiff(ou$NAME, otherou$NAME)\nrightdiff\n#ou[common]\n",
-      "user": "anonymous",
-      "dateUpdated": "2021-11-01 19:30:57.576",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "r",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/r",
-        "fontSize": 9.0,
-        "results": {},
-        "enabled": true,
-        "tableHide": false,
-        "editorHide": false
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "results": {
-        "code": "ERROR",
-        "msg": [
-          {
-            "type": "TEXT",
-            "data": "sparkR backend is dead, please try to increase spark.r.backendConnectionTimeout"
-          }
-        ]
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1635519189990_240369358",
-      "id": "paragraph_1635519189990_240369358",
-      "dateCreated": "2021-10-29 14:53:09.990",
-      "dateStarted": "2021-11-01 18:54:40.773",
-      "dateFinished": "2021-11-01 18:54:40.815",
+      "dateStarted": "2021-11-03 22:24:37.440",
+      "dateFinished": "2021-11-03 22:24:38.524",
       "status": "ERROR"
     },
     {
       "text": "%pyspark\n\nimport os\nimport cx_Oracle\n#import pandas as pd\n\noracle_user \u003d os.environ[\u0027DB_USER\u0027]\nz.put(\u0027oracle_user\u0027, oracle_user)\noracle_host \u003d os.environ[\u0027DB_HOST\u0027]\nz.put(\u0027oracle_host\u0027, oracle_host)\noracle_password \u003d os.environ[\u0027DB_PASSWORD\u0027]\nz.put(\u0027oracle_password\u0027, oracle_password)\noracle_port \u003d os.environ[\u0027DB_PORT\u0027]\nz.put(\u0027oracle_port\u0027, oracle_port)\noracle_service_name \u003d os.environ[\u0027DB_NAME\u0027]\nz.put(\u0027oracle_service_name\u0027, oracle_service_name)\noracle_url \u003d os.environ[\u0027DB_URL\u0027]\nz.put(\u0027oracle_url\u0027, oracle_url)\noracle_driver \u003d os.environ[\u0027DB_DRIVER\u0027]\nz.put(\u0027oracle_driver\u0027, oracle_driver)\noracle_home \u003d os.environ[\u0027ORACLE_HOME\u0027]\nz.put(\u0027oracle_home\u0027, oracle_home)\n\norg_type_id \u003d \u00271019533\u0027\nconnection \u003d cx_Oracle.connect(oracle_user, oracle_password, \"{0}:{1}/{2}\".format(oracle_host, oracle_port, oracle_service_name))\n\nsql_req \u003d \"SELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u0027{0} CSSS%\u0027 OR NAME like \u0027{1} CSSS%\u0027\"\n\ncursor \u003d connection.cursor()\ncursor.execute(sql_req.format(\u002707\u0027,\u002708\u0027))\n#names \u003d [x[0] for x in cursor.description]\n#rows \u003d cursor.fetchall()\norgs \u003d []\nfor org_unit_id, name in cursor:\n    org \u003d [org_unit_id, name]\n    orgs.append(org)\ncursor.close()\nfor org in orgs:\n    print(\"{0}: {1}\".format(org[0], org[1]))\n",
       "user": "anonymous",
-      "dateUpdated": "2021-11-03 21:41:05.762",
+      "dateUpdated": "2021-11-03 22:08:10.181",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -606,7 +531,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "oracle.jdbc.driver.OracleDriver\n34: 08 CSSS DE LA VALLEE-DE-L\u0027OR\n35: 08 CSSS DE ROUYN-NORANDA\n37: 08 CSSS DES AURORES-BOREALES\n38: 08 CSSS DU TEMISCAMINGUE\n39: 08 CSSS LES ESKERS DE L\u0027ABITIBI\n28: 07 CSSS DE GATINEAU\n29: 07 CSSS DE LA VALLEE-DE-LA-GATINEAU\n30: 07 CSSS DE PAPINEAU\n31: 07 CSSS DES COLLINES\n32: 07 CSSS DU PONTIAC\n"
+            "data": "34: 08 CSSS DE LA VALLEE-DE-L\u0027OR\n35: 08 CSSS DE ROUYN-NORANDA\n37: 08 CSSS DES AURORES-BOREALES\n38: 08 CSSS DU TEMISCAMINGUE\n39: 08 CSSS LES ESKERS DE L\u0027ABITIBI\n28: 07 CSSS DE GATINEAU\n29: 07 CSSS DE LA VALLEE-DE-LA-GATINEAU\n30: 07 CSSS DE PAPINEAU\n31: 07 CSSS DES COLLINES\n32: 07 CSSS DU PONTIAC\n"
           }
         ]
       },
@@ -616,14 +541,14 @@
       "jobName": "paragraph_1635517253678_1028317557",
       "id": "paragraph_1635450800249_1193386312",
       "dateCreated": "2021-10-29 14:20:53.678",
-      "dateStarted": "2021-11-03 21:39:44.112",
-      "dateFinished": "2021-11-03 21:39:44.540",
+      "dateStarted": "2021-11-03 22:08:10.185",
+      "dateFinished": "2021-11-03 22:08:10.508",
       "status": "FINISHED"
     },
     {
       "text": "%pyspark\nfrom inspqcommun.kafka.producteur import obtenirConfigurationsProducteurDepuisVariablesEnvironnement, creerProducteur, publierMessage\n",
       "user": "anonymous",
-      "dateUpdated": "2021-11-03 16:59:47.138",
+      "dateUpdated": "2021-11-03 22:23:53.149",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -642,18 +567,24 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
       "apps": [],
       "runtimeInfos": {},
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1635952882985_1338409863",
       "id": "paragraph_1635952882985_1338409863",
       "dateCreated": "2021-11-03 15:21:22.985",
-      "status": "READY"
+      "dateStarted": "2021-11-03 22:23:53.152",
+      "dateFinished": "2021-11-03 22:23:53.425",
+      "status": "FINISHED"
     },
     {
-      "text": "%spark.r\n\noracle_driver \u003c- z.get(\u0027oracle_driver\u0027)\noracle_home \u003c- z.get(\u0027oracle_home\u0027)\noracle_url \u003c- z.get(\u0027oracle_url\u0027)\ndrv \u003c- RJDBC::JDBC(oracle_driver, oracle_home + \u0027/ojdbc8.jar\u0027, \"`\")\nconn \u003c- dbConnect(drv, oracle_jdbc)\ndbListTables(conn)\n\nou \u003c- z.getAsDataFrame(\u0027python_ou\u0027)\notherou \u003c- z.getAsDataFrame(\u0027python_otherou\u0027)\n\ntest \u003c- z.get(\u0027ou\u0027)\ntest\n\nnrow(ou)\nnrow(otherou)\nou\notherou\n\n#ou$NAME\n#common \u003c- intersect(ou$NAME, otherou$NAME)\n#ou[common,]\n\nleftdiff \u003c- setdiff(otherou$NAME, ou$NAME)\nleftdiff\n\nrightdiff \u003c- setdiff(ou$NAME, otherou$NAME)\nrightdiff\n#ou[common]\n",
+      "text": "%spark.r\n\noracle_driver \u003c- z.get(\u0027oracle_driver\u0027)\noracle_home \u003c- z.get(\u0027oracle_home\u0027)\noracle_jar \u003d paste(oracle_home, \u0027/ojdbc8.jar\u0027, sep \u003d \"\")\noracle_url \u003c- z.get(\u0027oracle_url\u0027)\ndrv \u003c- RJDBC::JDBC(oracle_driver, oracle_jar, \"`\")\nconn \u003c- RJDBC::dbConnect(drv, oracle_url)\n#RJDBC::dbListTables(conn)\nou \u003c- RJDBC::dbGetQuery(conn, \"SELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002708 CSSS%\u0027 OR NAME like \u002709 CSSS%\u0027\")\n#ou \u003c- z.getAsDataFrame(\u0027python_ou\u0027)\notherou  \u003c- RJDBC::dbGetQuery(conn, \"SELECT ORGANIZATIONAL_UNIT_ID as id, NAME as NAME FROM PLOEPHS.ORGANIZATIONAL_UNIT ou WHERE NAME like \u002708 CSSS%\u0027 OR NAME like \u002707 CSSS%\u0027\")\n#otherou \u003c- z.getAsDataFrame(\u0027python_otherou\u0027)\n\nnrow(ou)\nnrow(otherou)\n#ou\n#otherou\n\n#ou$NAME\ncommon \u003c- intersect(ou$NAME, otherou$NAME)\ncommon\n\nleftdiff \u003c- setdiff(otherou$NAME, ou$NAME)\nleftdiff\n\nrightdiff \u003c- setdiff(ou$NAME, otherou$NAME)\nrightdiff\n#ou[common]\n",
       "user": "anonymous",
-      "dateUpdated": "2021-11-03 21:47:25.000",
+      "dateUpdated": "2021-11-03 22:23:32.508",
       "progress": 0,
       "config": {
         "editorSetting": {
@@ -679,7 +610,7 @@
         "msg": [
           {
             "type": "TEXT",
-            "data": "\nError in loadNamespace(name): there is no package called \u0027RJDBC\u0027\n\n\nError in dbConnect(drv, oracle_jdbc): could not find function \"dbConnect\"\n\n\nError in dbListTables(conn): could not find function \"dbListTables\"\n\n\nError in textConnection(text, encoding \u003d \"UTF-8\"): invalid \u0027text\u0027 argument\n\n\nError in textConnection(text, encoding \u003d \"UTF-8\"): invalid \u0027text\u0027 argument\n\n\nNULL\n\nError in nrow(ou): object \u0027ou\u0027 not found\n\n\nError in nrow(otherou): object \u0027otherou\u0027 not found\n\n\nError in eval(expr, envir, enclos): object \u0027ou\u0027 not found\n\n\nError in eval(expr, envir, enclos): object \u0027otherou\u0027 not found\n\n\nError in as.vector(x): object \u0027otherou\u0027 not found\n\n\nError in eval(expr, envir, enclos): object \u0027leftdiff\u0027 not found\n\n\nError in as.vector(x): object \u0027ou\u0027 not found\n\n\nError in eval(expr, envir, enclos): object \u0027rightdiff\u0027 not found\n\n\n\n\n"
+            "data": "\n[1] 13\n[1] 10\n[1] “08 CSSS DE LA VALLEE-DE-L\u0027OR”    “08 CSSS DE ROUYN-NORANDA”\n[3] “08 CSSS DES AURORES-BOREALES”    “08 CSSS DU TEMISCAMINGUE”\n[5] “08 CSSS LES ESKERS DE L\u0027ABITIBI”\n[1] “07 CSSS DE GATINEAU”                 “07 CSSS DE LA VALLEE-DE-LA-GATINEAU”\n[3] “07 CSSS DE PAPINEAU”                 “07 CSSS DES COLLINES”\n[5] “07 CSSS DU PONTIAC”\n[1] “09 CSSS DE L\u0027HEMATITE”\n[2] “09 CSSS DE LA BASSE-COTE-NORD”\n[3] “09 CSSS DE LA BASSE-CÔTE-NORD (PHARM)”\n[4] “09 CSSS DE LA HAUTE-COTE-NORD”\n[5] “09 CSSS DE LA MINGANIE”\n[6] “09 CSSS DE MANICOUAGAN”\n[7] “09 CSSS DE PORT-CARTIER”\n[8] “09 CSSS DE SEPT-ILES”                 \n\n\n\n"
           }
         ]
       },
@@ -689,40 +620,9 @@
       "jobName": "paragraph_1635517253678_584019989",
       "id": "paragraph_1635451644383_47611411",
       "dateCreated": "2021-10-29 14:20:53.678",
-      "dateStarted": "2021-11-03 21:47:25.005",
-      "dateFinished": "2021-11-03 21:47:25.114",
+      "dateStarted": "2021-11-03 22:23:32.511",
+      "dateFinished": "2021-11-03 22:23:33.763",
       "status": "FINISHED"
-    },
-    {
-      "text": "%r\n",
-      "user": "anonymous",
-      "dateUpdated": "2021-10-29 18:56:15.680",
-      "progress": 0,
-      "config": {
-        "editorSetting": {
-          "language": "r",
-          "editOnDblClick": false,
-          "completionKey": "TAB",
-          "completionSupport": false
-        },
-        "colWidth": 12.0,
-        "editorMode": "ace/mode/r",
-        "fontSize": 9.0,
-        "results": {},
-        "enabled": true,
-        "tableHide": false
-      },
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "runtimeInfos": {},
-      "progressUpdateIntervalMs": 500,
-      "jobName": "paragraph_1635517253678_516015151",
-      "id": "paragraph_1635454233392_194721080",
-      "dateCreated": "2021-10-29 14:20:53.678",
-      "status": "READY"
     }
   ],
   "name": "test",
